@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		http.Redirect(w, r, "https://github.com/tep-xi-admin/tep-wiki/wiki", http.StatusSeeOther)
+		http.Redirect(w, r, "https://github.com/tep-xi/tep-wiki/wiki", http.StatusSeeOther)
 	})
 
 	log.Println("listening on port 8080...")
